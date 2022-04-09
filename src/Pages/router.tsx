@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import React, { Suspense} from "react";
 import ExtendedRouter from "../extendedRouter";
 import history from "../history";
@@ -16,6 +16,7 @@ class Router extends React.Component {
                     <MainLayout>
                         <Routes>
                             <Route path="/" element={<Quiz />} />
+                            <Route path="*" element={<Navigate to="/" replace />} />
                         </Routes>
                     </MainLayout>
                 </Suspense>
