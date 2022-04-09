@@ -2,6 +2,8 @@
 
 In the project directory, you can run:
 
+### `npm install`
+To install the packages required to build the codebase. 
 ### `npm start`
 
 Runs the app in the development mode.\
